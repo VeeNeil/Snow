@@ -45,7 +45,7 @@ if ingredients_list:
         sf_df = st.dataframe(data=fruit.json(), use_container_width=True)
     
     insert = """insert into smoothies.public.orders(ingredients, name_on_order)
-            values('"""+ingredients_string+""", """+ name + """')"""
+            values('"""+ingredients_string+""", '"""+ name + """')"""
     submit = st.button('Submit Order')
     
    
